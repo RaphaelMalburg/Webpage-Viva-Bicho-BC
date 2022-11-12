@@ -30,7 +30,7 @@ body{
 
 }
 .corVerdeClaro{
-    color: #91F195;
+    color: #c6f3c8;
 }
 
 .btn-custom{
@@ -67,9 +67,43 @@ body{
     border-color: #5CA85F;
     
 }
+.blurcardverde{
+    background-color: #235f2641 ;
+}
 
 .videoContainer{
     min-height: 50vh;
 
 
+}
+.yellowfont{
+color: #FFE492!important;
+
+
+}
+
+.whitefont{
+
+    color:#ffffff;
+}
+.brushQA{
+    background-image: url(../Webpage-Viva-Bicho-BC/images/brushYellow.svg);
+    background-size: 85%;
+    background-repeat:no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    padding-bottom: 2rem;
+}
+.brushQABLUE{
+
+    background-image: url(../Webpage-Viva-Bicho-BC/images/brushGreen.svg);
+    background-size: 45%;
+    background-repeat:no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    padding-bottom: 2rem!important;
+    
+}
+.zindexfront{
+    z-index: 130;
 }
