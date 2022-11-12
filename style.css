@@ -13,8 +13,7 @@ p {
 }
 body{
     background-image: radial-gradient(circle, #235f26, #205623, #1d4e1f, #1a451c, #173d19);
-    height: 100vh;
-    width: 100vw;
+    
     overflow-x: hidden;
 }
 
@@ -48,14 +47,15 @@ body{
 }
 
 .cardExt{
-    min-width: 100px;
+    min-width: 14.3rem;
     max-width: 22rem;
-   min-height: 250px;
     
+  
 
 }
 .card-content{
     height: fit-content;
+    min-height: 20.5rem;
 }
 .cardBranco{
     background-color: #ffffff ;
@@ -106,4 +106,8 @@ color: #FFE492!important;
 }
 .zindexfront{
     z-index: 130;
+}
+.cardcomoajudar{
+    min-width: 14rem;
+    
 }
