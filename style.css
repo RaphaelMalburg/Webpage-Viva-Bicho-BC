@@ -108,6 +108,21 @@ color: #FFE492!important;
     z-index: 130;
 }
 .cardcomoajudar{
-    min-width: 14rem;
+    min-width: 13rem;
     
+}
+.fontsizedropdown{
+font-size: small;
+
+    
+}
+
+@media (max-width: 769px) {
+
+
+}
+@media (min-width: 769px) {
+.imgdogbox{
+    min-width: 20rem;
+}
 }
