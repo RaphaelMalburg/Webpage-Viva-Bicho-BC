@@ -1,0 +1,110 @@
+
+*{
+    font-family: 'Poppins', sans-serif; 
+    
+}
+h1{
+    color: #235F26;
+    
+}
+p {
+    color: #0C370E;
+  
+}
+body{
+    background-image: radial-gradient(circle, #235f26, #205623, #1d4e1f, #1a451c, #173d19);
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+.wavy-bg{
+ 
+    background-image: url(../images/bgwaves.svg);
+    height: 100vh;
+    width: 80vw;
+    object-position: -15vw 10%;
+    
+
+
+}
+.corVerdeClaro{
+    color: #c6f3c8;
+}
+
+.btn-custom{
+    background-color: #5CA85F;
+    
+}
+.bgback{
+    z-index: -10;
+}
+.imgback{
+    z-index: 1;
+}
+.bg-triangle{
+    object-position: -15vw 10%;
+}
+
+.cardExt{
+    min-width: 100px;
+    max-width: 22rem;
+   min-height: 250px;
+    
+
+}
+.card-content{
+    height: fit-content;
+    min-height: 20%;
+}
+.cardBranco{
+    background-color: #ffffff ;
+    border-color: #FFE492;
+    
+}
+.cardVerde{
+    background-color: #235F26 ;
+    border-color: #5CA85F;
+    
+}
+.blurcardverde{
+    background-color: #235f2641 ;
+}
+
+.videoContainer{
+    min-height: 50vh;
+
+
+}
+.yellowfont{
+color: #FFE492!important;
+
+
+}
+
+.whitefont{
+
+    color:#ffffff;
+}
+.brushQA{
+    background-image: url(../Webpage-Viva-Bicho-BC/images/brushYellow.svg);
+    background-size: 85%;
+    background-repeat:no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    padding-bottom: 2rem;
+}
+.brushQABLUE{
+
+    background-image: url(../Webpage-Viva-Bicho-BC/images/brushGreen.svg);
+    background-size: 45%;
+    background-repeat:no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    padding-bottom: 2rem!important;
+    
+}
+.zindexfront{
+    z-index: 130;
+}

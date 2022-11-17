@@ -1,0 +1,131 @@
+
+*{
+    font-family: 'Poppins', sans-serif; 
+    
+}
+h1{
+    color: #235F26;
+    
+}
+p {
+    color: #0C370E;
+  
+}
+body{
+    background-image: radial-gradient(circle, #235f26, #205623, #1d4e1f, #1a451c, #173d19);
+    
+    overflow-x: hidden;
+}
+
+
+.wavy-bg{
+ 
+    background-image: url(../Webpage-Viva-Bicho-BC/images/bgTopBottom.png);
+    position: relative;
+    opacity: 0.51;
+    z-index: -2;
+    object-fit: contain;
+
+}
+.corVerdeClaro{
+    color: #91F195;
+    z-index: 10;
+}
+.navbarbg{
+   background-color:  rgba(29, 78, 31, 0.6);
+   
+}
+.btn-custom{
+    background-color: #5CA85F;
+    
+}
+.bgback{
+    z-index: -10;
+}
+.imgback{
+    z-index: 1;
+}
+.bg-triangle{
+    object-position: -15vw 10%;
+}
+
+.cardExt{
+    min-width: 14.3rem;
+    max-width: 22rem;
+    
+  
+
+}
+.card-content{
+    height: fit-content;
+    min-height: 20.5rem;
+}
+.cardBranco{
+    background-color: #ffffff ;
+    border-color: #FFE492;
+    
+}
+.cardVerde{
+    background-color: #235F26 ;
+    border-color: #5CA85F;
+    
+}
+.blurcardverde{
+    background-color: #235f2641 ;
+}
+
+.videoContainer{
+    min-height: 50vh;
+
+
+}
+.yellowfont{
+color: #FFE492!important;
+
+
+}
+
+.whitefont{
+
+    color:#ffffff;
+}
+.brushQA{
+    background-image: url(../Webpage-Viva-Bicho-BC/images/brushYellow.svg);
+    background-size: 85%;
+    background-repeat:no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    padding-bottom: 2rem;
+}
+.brushQABLUE{
+
+    background-image: url(../Webpage-Viva-Bicho-BC/images/brushGreen.svg);
+    background-size: 45%;
+    background-repeat:no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    padding-bottom: 2rem!important;
+    
+}
+.zindexfront{
+    z-index: 130;
+}
+.cardcomoajudar{
+    min-width: 13rem;
+    
+}
+.fontsizedropdown{
+font-size: small;
+
+    
+}
+
+@media (max-width: 769px) {
+
+
+}
+@media (min-width: 769px) {
+.imgdogbox{
+    min-width: 20rem;
+}
+}
