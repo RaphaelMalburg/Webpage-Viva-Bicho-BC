@@ -13,12 +13,15 @@
  
       <!-- Estilo customizado -->
       <link rel="stylesheet" type="text/css" href="style.css">
-  
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+      <script defer type="module" src="index.js"></script>
       <link rel="icon" href="images/viva-bicho-logo.svg">
-    <title>Viva Bicho</title>
+     <title>Viva Bicho</title>
+
 </head>
 <body >
     <img src="images/bgTopBottom.png" class="position-absolute wavy-bg" alt="">
+    <img src="images/bgtriangle.svg" class=" position-absolute w-50 bg-triangle2 " alt=""> 
     <!-- Nav Bar-->
     <nav class="navbar navbar-expand-md navbar-dark container sticky-top navbarbg rounded ">
         <div class="container-fluid">
@@ -90,7 +93,8 @@
     </section>
 
     <!-- Quem Somos -->
-    <div class=" bg-white container-fluid" >
+    
+    <div class=" bg-white container-fluid " >
          <img src="images/bgtriangle.svg" class=" position-absolute w-50 bg-triangle " alt=""> 
         <section class="container pt-5">
             
@@ -119,7 +123,7 @@
 
                     <div class="col-12 col-md-6">
                         
-                        <img src="images/img3dog.png"  class="img-fluid " alt="">
+                        <img src="images/img3dog.png"  class="img-fluid zindexfront" alt="">
                     </div>
                 </div>
                 
@@ -132,7 +136,7 @@
 
         <!-- Section White-->
         <div class=" bg-white  ">
-           
+            
             <section class="container-fluid pb-4 ">
                 <h1 class="text-center fw-bolder pb-4">O que fazemos na Viva Bicho</h1>
                 
@@ -165,11 +169,13 @@
                     
                     </div>
                 </div>
-                
+               
             </section>
 
 
         </div>
+        
+    
         <!-- Section Green-->
         <section class=" mt-4 mb-4">
             <div class="container-fluid mt-4">
@@ -203,6 +209,7 @@
                 </div>
                 
             </div>
+            
         </section>
                 
 
@@ -397,7 +404,10 @@
 
     <!-- Doando Materiais -->
     <section class="container-fluid bg-white pb-4">
-        <div class="row container ">
+        <div class="container">
+
+        
+        <div class="row  ">
 
             <div class="col-12 col-md-8">
                
@@ -460,14 +470,13 @@
             </div>
             
         </div>
+
+        </div>
     </section>
     
     <!-- Pré Footer -->
-    <div class="container-fluid">
-       <img src="images/img-wavy3.png" class="wavy-bg position-absolute pt-5  " style="translate: -20px 0px;" alt=""> 
-    </div>
-    <section class="container ">
-
+    
+   <section class="container ">
       <div class="row">
 
       
@@ -476,52 +485,57 @@
             <div class="mt-5 ms-md-5 col-12 col-md-8">
                 
                 <h1 class="whitefont">Entre em contato conosco e seja um voluntário na ONG. </h1>
-                <h6 class="whitefont fontsizedropdown">Muito além de materiais e ajuda financeira nosso espaço sempre precisa de manutenções 
+                <h6 class="whitefont fontsizedropdown2 text-wrap">Muito além de materiais e ajuda financeira nosso espaço 
+                    sempre precisa de manutenções 
                     e os animais de muito amor e carinho.</h6>
             </div>
 
         </div>
        
-    </section>
+   </section>
+ <br>
+ <br>
+ <br>
+
  
     <!-- Footer -->
-    <footer>
-        <div>
-            <div>
-                <img src="" alt="">
-                <span></span>
+    
+    <footer class="container  ">
+        <div class="row whitefont justify-content-evenly">
+            <div class="col-md-3">
+               <a href="#"><img src="images/VivaBichoLogoWhite.png" width="80" alt=""></a> 
+                <span class="whitefont ms-3 fw-bold text-center">Por respeito a vida</span>
             </div>
-            <div>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+            <div class="col-md-2">
+                <ul class="whitefont li-footer">
+                    <li class="mb-3"><a href="#" class="whitefont" >Home</a></li>
+                    <li class="mb-3"><a href="#"  class="whitefont" >Quem Somos</a></li>
+                    <li class="mb-3"><a href="#"  class="whitefont" >Como Ajudar</a></li>
                 </ul>
             </div>
-            <div>
-                <h3></h3>
-                <span></span>
-                <span></span>
+            <div class="col-md-2">
+                <h4 class="mb-3">Contato</h4>
+                <p class="mb-3 whitefont">+55 47 32631020</p>
+                <p class="mb-3 whitefont text-wrap">vivabicho@vivabicho.org</p>
             </div>
-            <div>
-                <h3></h3>
-                <span></span>
-                <span></span>
+            <div class="col-md-4 ">
+                <h4 class="mb-3 whitefont">Enderço</h4>
+                <p class="mb-3 whitefont">Av. José Alves Cabral, 104  -Nova Esperança</p>
+                <p class="mb-3 whitefont">Balneário Camboriú - SC - 88336-030, Brazil</span>
             </div>
-            <div>
-                <img src="" alt="">
+            <div id="map" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14216.173613225286!2d-48.6179114!3d-27.0287944!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3caeb3a68bf0120e!2sNGO%20Viva%20Bicho!5e0!3m2!1sen!2spt!4v1669876464233!5m2!1sen!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <div>
-            <div>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
+            <div class="d-flex justify-content-evenly my-3">
+                <a href="https://www.instagram.com/ongvivabicho/?hl=en"><img src="images/instagram-logo.svg" alt="instagram-logo"></a>
+                <a href="https://www.facebook.com/ongvivabicho/"><img src="images/FB-logo.svg" alt="Facebook-logo"></a>
+                <a href="mailto:vivabicho@vivabicho.org?"><img src="images/email-logo.svg" alt="Email"></a>
             </div>
-            <p></p>
+            <p class="whitefont fontsizedropdown d-flex justify-content-center "> &#169; 2022 Raphael C. Malburg. Todos os direitos reservados.</p>
         </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>

@@ -3,6 +3,11 @@
     font-family: 'Poppins', sans-serif; 
     
 }
+li,a:hover, a:visited, a:link, a:active{
+    list-style: none;
+    text-decoration: none;
+    
+}
 h1{
     color: #235F26;
     
@@ -10,6 +15,9 @@ h1{
 p {
     color: #0C370E;
   
+}
+html{
+    width: 100%;
 }
 body{
     background-image: radial-gradient(circle, #235f26, #205623, #1d4e1f, #1a451c, #173d19);
@@ -25,7 +33,7 @@ body{
     background-position: center;
     height:100vh;
     width: 100vw;
-    opacity: 0.15;
+    opacity: 0.07;
     z-index: -2;
     
 
@@ -52,6 +60,13 @@ body{
     object-position: -15vw 10%;
 }
 
+.bg-triangle2{
+    object-position: 6vw 2vh;
+}
+.bg-triangle3{
+    object-position: right;
+    
+}
 .cardExt{
     min-width: 14.3rem;
     max-width: 22rem;
@@ -117,27 +132,68 @@ color: #FFE492!important;
     min-width: 13rem;
     
 }
+.bg-white{
+
+    background-color: #ffffff;
+    width: 100%;
+}
 .fontsizedropdown{
 font-size: small;
 
     
 }
+.fontsizedropdown2{
+    font-size: medium;
+}
+.bg-middlefirst{
+    position: absolute;
+    width: 100vw;
+    height:60vh;
+    object-fit: cover;
+}
 
-@media (max-width: 768px) {
+#map{
+    height: 15rem;
+    width: 25rem;
+    margin-top: 2rem;
+}
+#map iframe{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 767px) {
     .wavy-bg{
  
         
         height:161vh;
         width: 100vw;
-        opacity: 0.15;
+        opacity: 0.1;
         z-index: -2;
         
     
     }
+    .li-footer{
 
-}
+        margin-top: 2rem;
+        padding: 0;
+    }
+    .bg-white{
+
+        background-color: #ffffff;
+        width: 100vw;
+    }
+    .wavy-bg{
+        width: 100vw;
+    }
+    
+    }
 @media (min-width: 769px) {
 .imgdogbox{
     min-width: 20rem;
 }
+.fontsizedropdown {
+    font-size: medium;
+    
+        
+    }
 }
