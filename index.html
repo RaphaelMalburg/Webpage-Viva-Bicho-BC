@@ -32,9 +32,9 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto fw-bold fs-6 gap-3 ">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Quem Somos</a>
-              <a class="nav-link" href="#">Como Ajudar</a>
-              <a class="nav-link " href="#">Contato</a>
+              <a class="nav-link " href="#quem-somos">Quem Somos</a>
+              <a class="nav-link" href="#como-ajudar">Como Ajudar</a>
+              <a class="nav-link " href="#contato">Contato</a>
             </div>
           </div>
         </div>
@@ -51,8 +51,8 @@
                         <h1 class="corVerdeClaro "> Por respeito a vida</h1>
                         <h5 class="corVerdeClaro">Ajude quem <span class="text-light ">AMA</span> ajudar</h5>
                         <br>
-                        <button class="btn btn-success btn-custom px-3 py-2 position-relative  ">Descubra como ajudar</button>   
-                  
+                        <a href="#como-ajudar"> <button class="btn btn-success btn-custom px-3 py-2 position-relative  ">Descubra como ajudar</button>   
+                        </a>
                 </div>
                       
 
@@ -94,7 +94,7 @@
 
     <!-- Quem Somos -->
     
-    <div class=" bg-white container-fluid " >
+    <div id="quem-somos" class=" bg-white container-fluid " >
          <img src="images/bgtriangle.svg" class=" position-absolute w-50 bg-triangle " alt=""> 
         <section class="container pt-5">
             
@@ -360,10 +360,10 @@
 
     <!-- Como Ajudar -->
 
-    <img src="images/bgtriangle.svg" class=" position-absolute w-50 bg-triangle bgback mt-5" alt=""> 
+    <img id="como-ajudar" src="images/bgtriangle.svg" class=" position-absolute w-50 bg-triangle bgback mt-5" alt=""> 
     <section class="container ">
         
-        <h1 class="text-center fw-bolder pb-4 pt-5 text-white brushQABLUE">Como Ajudar</h1>
+        <h1 class="text-center fw-bolder pb-4 pt-5 greyfont brushQABLUE">Como Ajudar</h1>
         <h6 class="whitefont text-center fw-regular mb-5"> Você pode nos ajudar com uma doação por alguns desses meios</h6>
 
         <div class="row container justify-content-between " >
@@ -383,18 +383,23 @@
 
             <div class="col col-md-3 my-2 cardcomoajudar d-flex align-items-center flex-column  ">
                 <button type="button" class="card btn btn-light my-2 text-center w-100 ">
-                    <a href="#"><img src="images/vakinha-logo-removebg.png"  class="img-fluid py-2" alt=""></a>
+                    <a href="https://www.vakinha.com.br/vaquinha/ajudar-ong-viva-bicho-balneario-camboriu">
+                        <img src="images/vakinha-logo-removebg.png"  class="img-fluid py-2" alt="">
+                    </a>
                     
                 </button>
                 <button type="button" class="card  btn btn-light my-2 text-center w-100">
-                    <a href="#"><img src="images/pagseguro-logo.svg" class="img-fluid  py-3" alt=""></a>
+                    <a href="https://pagseguro.uol.com.br/checkout/nc/nl/donation/sender-identification.jhtml?t=689ae12c2291ec41e1868e293e343f3865ed7f2450b42902045b18d69bae3d68&e=true#rmcl">
+                        <img src="images/pagseguro-logo.svg" class="img-fluid  py-3 px-4" alt="">
+                    </a>
                 </button>  
+               
             </div>
             
 
         </div>
 
-        <h1 class="text-center fw-bolder pb-4 pt-5 text-white brushQABLUE">Adote um Amigo e salve uma vida</h1>
+        <h1 class="text-center fw-bolder pb-4 pt-5  greyfont brushQABLUE">Adote um Amigo e salve uma vida</h1>
         <h6 class="whitefont text-center fw-regular mb-5"> Centenas de animais esperam para ter um lar.</h6>
 
 
@@ -500,17 +505,17 @@
  
     <!-- Footer -->
     
-    <footer class="container  ">
+    <footer id="contato" class="container  ">
         <div class="row whitefont justify-content-evenly">
             <div class="col-md-3">
-               <a href="#"><img src="images/VivaBichoLogoWhite.png" width="80" alt=""></a> 
+               <a href="index.html"><img src="images/VivaBichoLogoWhite.png" width="80" alt=""></a> 
                 <span class="whitefont ms-3 fw-bold text-center">Por respeito a vida</span>
             </div>
             <div class="col-md-2">
                 <ul class="whitefont li-footer">
-                    <li class="mb-3"><a href="#" class="whitefont" >Home</a></li>
-                    <li class="mb-3"><a href="#"  class="whitefont" >Quem Somos</a></li>
-                    <li class="mb-3"><a href="#"  class="whitefont" >Como Ajudar</a></li>
+                    <li class="mb-3"><a href="index.html" class="whitefont" >Home</a></li>
+                    <li class="mb-3"><a href="#quem-somos"  class="whitefont" >Quem Somos</a></li>
+                    <li class="mb-3"><a href="#como-ajudar"  class="whitefont" >Como Ajudar</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
@@ -533,7 +538,7 @@
                 <a href="https://www.facebook.com/ongvivabicho/"><img src="images/FB-logo.svg" alt="Facebook-logo"></a>
                 <a href="mailto:vivabicho@vivabicho.org?"><img src="images/email-logo.svg" alt="Email"></a>
             </div>
-            <p class="whitefont fontsizedropdown d-flex justify-content-center "> &#169; 2022 Raphael C. Malburg. Todos os direitos reservados.</p>
+            <p class="whitefont fontsizedropdown d-flex justify-content-center "> &#169; 2022 Raphael Malburg. Todos os direitos reservados.</p>
         </div>
     </footer>
 
