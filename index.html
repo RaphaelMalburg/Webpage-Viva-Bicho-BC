@@ -31,10 +31,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav   ms-auto fw-bold fs-6 gap-3 "  id="navbarNavAltMarkup">
-              <a class="nav-link nav-item  active" aria-current="page"  href="#">Home</a>
-              <a class="nav-link nav-item " href="#quem-somos">Quem Somos</a>
-              <a class="nav-link nav-item" href="#como-ajudar">Como Ajudar</a>
-              <a class="nav-link nav-item" href="#contato">Contato</a>
+              <a class="nav-link active" aria-current="page"  href="#">Home</a>
+              <a class="nav-link  " href="#quem-somos">Quem Somos</a>
+              <a class="nav-link " href="#como-ajudar">Como Ajudar</a>
+              <a class="nav-link " href="#contato">Contato</a>
             </div>
           </div>
         </div>
@@ -543,15 +543,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script>
-        
-        const navLinks = document.querySelectorAll('.nav-item')
-        const menuToggle = document.getElementById('navbarNavAltMarkup')
-        const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
-        navLinks.forEach((l) => {
-        l.addEventListener('click', () => { bsCollapse.toggle() })
-        })
-        
-    </script>
+   
 </body>
 </html>
