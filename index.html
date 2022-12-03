@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
      <!-- Bootstrap CSS --> 
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
      <!-- Font Awesome -->
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -26,15 +26,15 @@
     <nav class="navbar navbar-expand-md navbar-dark container sticky-top navbarbg rounded ">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="images/VivaBichoLogoWhite.png" width="120" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto fw-bold fs-6 gap-3 ">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link " href="#quem-somos">Quem Somos</a>
-              <a class="nav-link" href="#como-ajudar">Como Ajudar</a>
-              <a class="nav-link " href="#contato">Contato</a>
+            <div class="navbar-nav   ms-auto fw-bold fs-6 gap-3 "  id="navbarNavAltMarkup">
+              <a class="nav-link nav-item  active" aria-current="page"  href="#">Home</a>
+              <a class="nav-link nav-item " href="#quem-somos">Quem Somos</a>
+              <a class="nav-link nav-item" href="#como-ajudar">Como Ajudar</a>
+              <a class="nav-link nav-item" href="#contato">Contato</a>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@
 
             </div>
             <div class="col-12 col-md-6">
-                <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
+                <div id="carouselExampleIndicators" class="carousel carousel-dark slide " data-bs-ride="true" data-bs-interval="10000">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -67,13 +67,13 @@
                      
                     </div>
                     <div class="carousel-inner shadow-lg rounded-4">
-                      <div class="carousel-item active">
-                        <img src="images/dog-wheel.png" class="d-block w-100 h-100" alt="...">
+                      <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="images/dog-wheel.png" class="d-block w-100 h-100"  alt="...">
                       </div>
-                      <div class="carousel-item">
+                      <div class="carousel-item" data-bs-interval="2000">
                         <img src="images/adoption-dog.png" class="d-block w-100 h-100" alt="...">
                       </div>
-                      <div class="carousel-item">
+                      <div class="carousel-item" data-bs-interval="2000">
                         <img src="images/promo-dog.png" class="d-block w-100 h-100" alt="...">
                       </div>
                     
@@ -162,7 +162,7 @@
                         <img src="images/book.svg"  width="10px" height="80rem"src="" class="card-img-top my-3" alt="...">
                         <div class="card-body">
                         <h4 class="card-title fw-bold">Educacional</h4>
-                        <p class="card-text  text-muted fw-bold">Animais resgatados com doenças e machucados são  operados com ajuda de parceiros da ONG.</p>
+                        <p class="card-text  text-muted fw-bold">Instruir a população sobre a posse responsável e castração.</p>
                         
                         </div>
                     </div>
@@ -228,7 +228,7 @@
             <div class="carousel-inner col justify-content-center ">
             <div class="carousel-item active" data-bs-interval="10000">
                 <div class="card cardVerde cardExt card-content col col-md-4  ">
-                    <img src="images/sirynge.svg"  width="10px" height="80rem" class="card-img-top my-3" alt="...">
+                    <img src="images/sirynge.svg"  width="10" height="80" class="card-img-top my-3" alt="...">
                     <div class="card-body">
                     <h4 class="card-title fw-bold  yellowfont">Cirurgias</h4>
                     <p class="card-text whitefont fw-bold">Animais resgatados com doenças e machucados são  operados com ajuda de parceiros da ONG.</p>
@@ -240,7 +240,7 @@
             <div class="carousel-item" data-bs-interval="2000">
 
                 <div class="card  cardExt cardBranco card-content col  col-md-4" >
-                    <img src="images/nursingroom.svg"  width="10px" height="80rem" class="card-img-top my-3 " alt="...">
+                    <img src="images/nursingroom.svg"  width="10" height="80" class="card-img-top my-3 " alt="...">
                     <div class="card-body">
                     <h4 class="card-title fw-bold">Castração</h4>
                     <p class="card-text fw-bold text-muted">A castração é realizada para que os animais estejam prontos para  receberem um novo lar.</p>
@@ -252,7 +252,7 @@
             <div class="carousel-item" data-bs-interval="2000">
 
                 <div class="card cardExt cardVerde col card-content col-md-4    " >
-                    <img src="images/house.svg"  width="10px" height="80rem" class="card-img-top mx-3 my-3" alt="...">
+                    <img src="images/house.svg"  width="10" height="80" class="card-img-top mx-3 my-3" alt="...">
                     <div class="card-body">
                     <h4 class="card-title fw-bold yellowfont">Acolhimento</h4>
                     <p class="card-text whitefont fw-bold">Animais em situação de abandono e maus tratos são acolhidos diariamente pela ONG.</p>
@@ -264,8 +264,8 @@
 
             <div class="carousel-item" data-bs-interval="2000">
 
-                <div class="card cardExt col gap-" >
-                    <img src="images/speaker.svg"  width="10px" height="80rem" class="card-img-top my-3" alt="...">
+                <div class="card cardExt col card-content" >
+                    <img src="images/speaker.svg"  width="10" height="80" class="card-img-top my-3" alt="...">
                     <div class="card-body">
                     <h4 class="card-title fw-bold">Feiras de adoção</h4>
                     <p class="card-text text-muted fw-bold">Para estimular a adoção dos animais, feiras são organizadas com apoio de parceiros da ONG.</p>
@@ -277,8 +277,8 @@
 
             <div class="carousel-item" data-bs-interval="2000">
 
-                <div class="card cardExt cardVerde col" >
-                    <img src="images/ambulance.svg"  width="10px" height="80rem" class="card-img-top my-3" alt="...">
+                <div class="card cardExt cardVerde col card-content" >
+                    <img src="images/ambulance.svg"  width="10" height="80" class="card-img-top my-3" alt="...">
                     <div class="card-body">
                     <h4 class="card-title fw-bold yellowfont">Resgates</h4>
                     <p class="card-text fw-bold whitefont">Animais em estado de abandono e machucados são prioridades.</p>
@@ -289,11 +289,11 @@
 
             <div class="carousel-item">
 
-                <div class="card cardExt col " >
-                    <img src="images/book.svg"  width="10px" height="80rem"src="" class="card-img-top my-3" alt="...">
+                <div class="card cardExt col card-content" >
+                    <img src="images/book.svg"  width="10" height="80"src="" class="card-img-top my-3" alt="...">
                     <div class="card-body">
                     <h4 class="card-title fw-bold">Educacional</h4>
-                    <p class="card-text fw-bold text-muted">Animais resgatados com doenças e machucados são  operados com ajuda de parceiros da ONG.</p>
+                    <p class="card-text fw-bold text-muted">Instruir a população sobre a posse responsável e castração.</p>
                     
                     </div>
                 </div>
@@ -428,7 +428,7 @@
                                 <li><a class="dropdown-item fontsizedropdown" href="#">Luva</a></li>
                                 <li><a class="dropdown-item fontsizedropdown" href="#">Gaze</a></li>
                                 <li><a class="dropdown-item fontsizedropdown" href="#">Esparadrapo</a></li>
-                                <li><a class="dropdown-item fontsizedropdown" href="#">Agua oxigenada</a></li>
+                                <li><a class="dropdown-item fontsizedropdown" href="#">Água oxigenada</a></li>
                                 <li><a class="dropdown-item fontsizedropdown" href="#">Iodo</a></li>
                                 <li><a class="dropdown-item fontsizedropdown" href="#">Álcool 70</a></li>
                                 <li><a class="dropdown-item fontsizedropdown" href="#">Seringa 3ml</a></li>
@@ -457,7 +457,7 @@
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                   <li><a class="dropdown-item fontsizedropdown" href="#">Tapete higiênico</a></li>
-                                  <li><a class="dropdown-item fontsizedropdown" href="#">Potes de agua e ração</a></li>
+                                  <li><a class="dropdown-item fontsizedropdown" href="#">Potes de água e ração</a></li>
                                   <li><a class="dropdown-item fontsizedropdown" href="#">Granulado para gatos</a></li>
                                   <li><a class="dropdown-item fontsizedropdown" href="#">Toalha de banho usada</a></li>
                                   <li><a class="dropdown-item fontsizedropdown" href="#">Caixa de areia</a></li>
@@ -542,6 +542,16 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script>
+        
+        const navLinks = document.querySelectorAll('.nav-item')
+        const menuToggle = document.getElementById('navbarNavAltMarkup')
+        const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
+        navLinks.forEach((l) => {
+        l.addEventListener('click', () => { bsCollapse.toggle() })
+        })
+        
+    </script>
 </body>
 </html>

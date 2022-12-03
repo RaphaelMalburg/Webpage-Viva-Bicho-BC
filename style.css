@@ -75,8 +75,8 @@ body{
 
 }
 .card-content{
-    height: fit-content;
-    min-height: 20.5rem;
+    height: 17rem;
+    
 }
 .cardBranco{
     background-color: #ffffff ;
@@ -94,7 +94,7 @@ body{
 
 .videoContainer{
     min-height: 50vh;
-
+    
 
 }
 .yellowfont{
@@ -102,7 +102,9 @@ color: #FFE492!important;
 
 
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .whitefont{
 
     color:#ffffff;
