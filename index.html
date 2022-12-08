@@ -23,22 +23,59 @@
     <img src="images/bgTopBottom.png" class="position-absolute wavy-bg" alt="">
     <img src="images/bgtriangle.svg" class=" position-absolute w-50 bg-triangle2 " alt=""> 
     <!-- Nav Bar-->
-    <nav class="navbar navbar-expand-md navbar-dark container sticky-top navbarbg rounded ">
+
+    
+
+    <nav class=" navbar-dark container sticky-top navbarbg rounded " id="header">
+        <a  href="index.html"><img  class="m-3" src="images/VivaBichoLogoWhite.png" width="120" alt="Logo"></a>
+       <div class="responsive-navbar-desktop">
+        <ul  >
+            <li><a href="#">Home</a></li>
+            <li><a href="#quem-somos">Quem Somos</a></li>
+            <li><a href="#como-ajudar">Como Ajudar</a></li>
+            <li><a href="#contato">Contato</a></li>
+
+        </ul>
+       </div>
+        
+        <div class=" responsive-navbar">
+
+       
+            <div class="pt-5" id="toggle"></div>
+            
+            <div id="navbar">
+                <ul >
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#como-ajudar">Como Ajudar</a></li>
+                    <li><a href="#contato">Contato</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        
+<!--
+
+
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="images/VivaBichoLogoWhite.png" width="120" alt=""></a>
-          <button class="navbar-toggler dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" >
+          <button class="navbar-toggler dropdown-toggle" id="toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav   ms-auto fw-bold fs-6 gap-3 "  id="navbarNavAltMarkup">
-              <a class="nav-link active" aria-current="page"  href="#">Home</a>
+            <div class="navbar-nav   ms-auto fw-bold fs-6 gap-3 "  onclick="hideNavbar()">
+              <a class= "nav-link active " aria-current="page"  href="#">Home</a>
               <a class="nav-link  " href="#quem-somos">Quem Somos</a>
               <a class="nav-link " href="#como-ajudar">Como Ajudar</a>
               <a class="nav-link " href="#contato">Contato</a>
             </div>
           </div>
         </div>
+
+    -->
     </nav>
+
 
     <!-- Hero -->
     <section class="container pb-5 hero">
@@ -389,7 +426,7 @@
                     
                 </button>
                 <button type="button" class="card  btn btn-light my-2 text-center w-100">
-                    <a href="https://pagseguro.uol.com.br/checkout/nc/nl/donation/sender-identification.jhtml?t=689ae12c2291ec41e1868e293e343f3865ed7f2450b42902045b18d69bae3d68&e=true#rmcl">
+                    <a href="https://pag.ae/7Wj_AP7CK">
                         <img src="images/pagseguro-logo.svg" class="img-fluid  py-3 px-4" alt="">
                     </a>
                 </button>  
@@ -542,7 +579,27 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-   
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" async defer></script>
+    <script>
+
+        const header = document.getElementById('header');
+        const toggle = document.getElementById('toggle');
+        const navbar = document.getElementById('navbar');
+
+        document.onclick = function(e){
+            if(e.target.id !== 'header' && e.target.id !== 'toggle' && e.target.id !== 'navbar'){
+                toggle.classList.remove('active');
+                navbar.classList.remove('active');
+
+            }
+
+        }
+
+        toggle.onclick = function (){
+            toggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+
 </body>
 </html>
