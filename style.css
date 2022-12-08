@@ -94,7 +94,7 @@ body{
 }
 
 #navbar.active{
-    padding-top: 200px;
+    height: fit-content;
     width: 660px;
 }
 
