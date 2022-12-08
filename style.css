@@ -94,7 +94,8 @@ body{
 }
 
 #navbar.active{
-    height: fit-content;
+
+    height: 100%;
     width: 660px;
 }
 
