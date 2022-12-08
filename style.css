@@ -147,6 +147,7 @@ text-shadow: 2px 2px 8=px rgb(29, 78, 31);;
     position: relative;
     display: flex;
     flex-direction: row;
+    height: 100vh;
     
     
 }
