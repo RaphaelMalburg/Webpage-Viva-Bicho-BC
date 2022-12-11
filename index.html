@@ -359,7 +359,7 @@
             <h1 class="text-center fw-bolder py-4">Quem Apoia nossa causa</h1>
             <!-- Armandinho-->
             <div class="row videoContainer">
-                <iframe src="https://www.youtube.com/embed/IZrfYaM3Msw" frameborder="0" class="col-md-6 "></iframe>
+                <iframe src="https://www.youtube.com/embed/IZrfYaM3Msw" frameborder="0" id="myvideo" class="col-md-6 "></iframe>
 
                 <div class="col-md-6 px-4">
                     <div >
@@ -561,9 +561,9 @@
                 <p class="mb-3 whitefont text-wrap">vivabicho@vivabicho.org</p>
             </div>
             <div class="col-md-4 ">
-                <h4 class="mb-3 whitefont">Enderço</h4>
+                <h4 class="mb-3 whitefont">Endereço</h4>
                 <p class="mb-3 whitefont">Av. José Alves Cabral, 104  -Nova Esperança</p>
-                <p class="mb-3 whitefont">Balneário Camboriú - SC - 88336-030, Brazil</span>
+                <p class="mb-3 whitefont">Balneário Camboriú - SC - 88336030, Brazil</span>
             </div>
             <div id="map" >
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14216.173613225286!2d-48.6179114!3d-27.0287944!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3caeb3a68bf0120e!2sNGO%20Viva%20Bicho!5e0!3m2!1sen!2spt!4v1669876464233!5m2!1sen!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -594,11 +594,38 @@
             }
 
         }
-
+        
         toggle.onclick = function (){
             toggle.classList.toggle('active');
             navbar.classList.toggle('active');
         }
+
+        /*
+           ---Stop video playing after out of view
+        */
+
+        let options =  {
+            root:null,
+            rootMargin:'0px',
+            threshold:1.0
+
+        }
+
+        let callback= ()=>(entries, observer) =>{
+            entries.forEach(entry => {
+                if(entry.target.id == 'myvideo'){
+                    if(entry.isIntersecting){
+                        entry.target.play();
+                    }else{
+                        entry.target.pause();
+                    }
+                }
+            });
+
+        }
+       let observer = new IntersectionObserver(callback, options);
+        observer.observe(document.querySelector('#myvideo'))
+        
     </script>
 
 </body>

@@ -156,6 +156,7 @@ text-shadow: 2px 2px 8=px rgb(29, 78, 31);;
 .responsive-navbar-desktop ul li{
 list-style: none;
 padding-left: 2rem;
+margin-bottom: 50px;
 }
 
 .responsive-navbar-desktop ul li a{
@@ -167,6 +168,7 @@ padding-left: 2rem;
     font-size: 1.2em;
     padding: 0 15px;
     letter-spacing: 2px;
+    
 
 
 }
@@ -226,11 +228,10 @@ text-shadow: 2px 2px 8=px rgb(29, 78, 31);;
     min-width: 14.3rem;
     max-width: 22rem;
     
-  
 
 }
 .card-content{
-    height: 17rem;
+    height: 20rem;
     
 }
 .cardBranco{
